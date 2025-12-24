@@ -6,9 +6,9 @@ Project ini merupakan backend REST API sederhana menggunakan Node.js, Express, d
 
 ## A. Instalasi MySQL dan Tools
 
-- XAMPP / MAMP / WAMP
+- XAMPP 
 - MySQL Server
-- MySQL Workbench / phpMyAdmin
+- phpMyAdmin
 
 ---
 
@@ -79,7 +79,7 @@ Pastikan server sudah berjalan: http://localhost:3000
 - Masukkan data:
 ```json
 {
-  "name": "Baju abaya"
+  "name": "baju abaya"
 } 
 ```
 - Pilih Klik Send, Jika berhasil, akan muncul response data category berhasil ditambahkan.
@@ -106,6 +106,12 @@ Pastikan server sudah berjalan: http://localhost:3000
 - Pilih tab **Body**
 - Pilih **raw**
 - Pilih format **JSON**
+-  Masukkan data:
+```json
+{
+  "name": "kaos kaki"
+} 
+```
 - Pilih Klik Send, Jika berhasil, akan muncul pesan Kategori berhasil diupdate.
 ![POST Category](screnshot/update_id_categori.jpeg)
 
@@ -128,7 +134,7 @@ Pastikan server sudah berjalan: http://localhost:3000
 ```json
 {
   "name": "buku",
-  "price": 800.000,
+  "price": 600.000,
   "category_id": 2
 }
 ```
@@ -156,6 +162,14 @@ Pastikan server sudah berjalan: http://localhost:3000
 - Pilih tab **Body**
 - Pilih **raw**
 - Pilih format **JSON**
+-  Masukkan data:
+```json
+{
+  "price": "53000",
+  "name": "baju batik",
+  "category_id": 2
+}
+```
 - Pilih Klik Send, Jika berhasil, akan muncul pesan product berhasil diupdate.
 ![POST Category](screnshot/update_id_product.jpeg)
 
